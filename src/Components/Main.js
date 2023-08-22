@@ -97,6 +97,7 @@ class Buttons extends React.Component {
             <Dropdown.Item eventKey="1">20x10</Dropdown.Item>
             <Dropdown.Item eventKey="2">50x30</Dropdown.Item>
             <Dropdown.Item eventKey="3">70x50</Dropdown.Item>
+            <Dropdown.Item eventKey="4">250x100</Dropdown.Item>
           </DropdownButton>
         </ButtonToolbar>
       </div>
@@ -179,6 +180,14 @@ class Main extends React.Component {
       case "2":
         this.cols = 50;
         this.rows = 30;
+        break;
+      case "3":
+        this.cols = 70;
+        this.rows = 50;
+        break;
+      case "4":
+        this.cols = 250;
+        this.rows = 150;
         break;
       default:
         this.cols = 70;
