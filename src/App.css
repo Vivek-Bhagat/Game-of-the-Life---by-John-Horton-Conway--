@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
     background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/squares.png) 
   }
@@ -9,6 +13,7 @@ body {
     height: 15px;
     margin-left: -1px;
     margin-bottom: -1px;
+    box-shadow: 5px 5px 5px #fff;
     }
   
   .off {
@@ -20,7 +25,7 @@ body {
   }
     
   .box:hover { 
-    background: #00CCFF;
+    background: #ffd900;
   }
   
   .center {
@@ -47,4 +52,33 @@ body {
   
   h4 {
     margin-top: 0px;
+  }
+
+  .layout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+  }
+  .title-game{
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+  }
+  .App{
+    background-color: black;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .span{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 7px;
+     border-radius: 15px;
+     background-color: #ffd900;
+     margin: 10px 10px;
   }

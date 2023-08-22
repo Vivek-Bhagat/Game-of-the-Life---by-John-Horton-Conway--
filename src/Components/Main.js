@@ -66,27 +66,27 @@ class Buttons extends React.Component {
       <div className="center">
         <ButtonToolbar>
           <Button
-            className="btn btn-default mx-1"
+            className="btn btn-success mx-1"
             onClick={this.props.playButton}
           >
             Play
           </Button>
           <Button
-            className="btn btn-default mx-1"
+            className="btn btn-warning mx-1"
             onClick={this.props.pauseButton}
           >
             Pause
           </Button>
-          <Button className="btn btn-default mx-1" onClick={this.props.clear}>
+          <Button className="btn btn-danger mx-1" onClick={this.props.clear}>
             Clear
           </Button>
-          <Button className="btn btn-default mx-1" onClick={this.props.slow}>
+          <Button className="btn btn-light mx-1" onClick={this.props.slow}>
             Slow
           </Button>
           <Button className="btn btn-default mx-1" onClick={this.props.fast}>
             Fast
           </Button>
-          <Button className="btn btn-default mx-1" onClick={this.props.seed}>
+          <Button className="btn btn-info mx-1" onClick={this.props.seed}>
             Seed
           </Button>
           <DropdownButton
@@ -97,7 +97,7 @@ class Buttons extends React.Component {
             <Dropdown.Item eventKey="1">20x10</Dropdown.Item>
             <Dropdown.Item eventKey="2">50x30</Dropdown.Item>
             <Dropdown.Item eventKey="3">70x50</Dropdown.Item>
-            <Dropdown.Item eventKey="4">250x100</Dropdown.Item>
+            <Dropdown.Item eventKey="4">100x100</Dropdown.Item>
           </DropdownButton>
         </ButtonToolbar>
       </div>
@@ -186,8 +186,8 @@ class Main extends React.Component {
         this.rows = 50;
         break;
       case "4":
-        this.cols = 250;
-        this.rows = 150;
+        this.cols = 100;
+        this.rows = 100;
         break;
       default:
         this.cols = 70;
@@ -230,7 +230,8 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <h1>The Game of Life</h1>
+        <h1 className="title-game">The Game of Life</h1>
+        <span className="span" />
         <Buttons
           playButton={this.playButton}
           pauseButton={this.pauseButton}
