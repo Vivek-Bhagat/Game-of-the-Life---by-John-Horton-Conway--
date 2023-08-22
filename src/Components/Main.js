@@ -7,6 +7,7 @@ import {
   DropdownButton,
   Button,
 } from "react-bootstrap";
+import Example from "./Modal";
 
 class Box extends React.Component {
   selectBox = () => {
@@ -230,7 +231,12 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="title-game">The Game of Life</h1>
+        <div className="flex">
+          <h1 className="title-game">The Game of Life</h1>
+          <div>
+            <Example />
+          </div>
+        </div>
         <span className="span" />
         <Buttons
           playButton={this.playButton}

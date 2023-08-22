@@ -58,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color:  #212529;
     
   }
   .title-game{
@@ -67,7 +67,7 @@ body {
     font-weight: 100;
   }
   .App{
-    background-color: black;
+    background-color: #212529;
     min-width: 100vw;
     min-height: 100vh;
   }
@@ -82,3 +82,11 @@ body {
      background-color: #ffd900;
      margin: 10px 10px;
   }
+  /* .modal-content{
+    background-color: #212529;
+  }
+
+  .btn-close{
+    background: #eeeeee00 var(--bs-btn-close-bg) center/1em auto no-repeat;
+    border: 1px;
+  } */
